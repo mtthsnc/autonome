@@ -35,7 +35,7 @@ cd tests/claude-code
 
 - Must run from the **autonome plugin directory** (not from temp directories)
 - Claude Code must be installed and available as `claude` command
-- Local dev marketplace must be enabled: `"autonome@autonome-dev": true` in `~/.claude/settings.json`
+- Local dev marketplace must be enabled: `"autonome@autonome-plugins": true` in `~/.claude/settings.json`
 
 ## Integration Test: use-subagents-dispatch
 
@@ -183,7 +183,7 @@ ls -lt "$SESSION_DIR"/*.jsonl | head -5
 
 **Solutions**:
 1. Ensure you're running FROM the autonome directory: `cd /path/to/autonome && tests/...`
-2. Check `~/.claude/settings.json` has `"autonome@autonome-dev": true` in `enabledPlugins`
+2. Check `~/.claude/settings.json` has `"autonome@autonome-plugins": true` in `enabledPlugins`
 3. Verify skill exists in `skills/` directory
 
 ### Permission Errors
