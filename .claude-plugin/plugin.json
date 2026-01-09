@@ -1,0 +1,13 @@
+{
+  "name": "autonome",
+  "description": "Intent-Driven Agents (IDA) workflow system that amplifies your intent through structured design, planning, and execution. Optimized for intent, clarity and direction.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matthias Christensen",
+    "email": "matthias@nach.dk"
+  },
+  "homepage": "https://github.com/mtthsnc/autonome",
+  "repository": "https://github.com/mtthsnc/autonome",
+  "license": "MIT",
+  "keywords": ["skills", "workflows", "design", "planning", "tdd", "agents", "subagents", "clarity", "autonomous"]
+}
