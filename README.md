@@ -1,4 +1,4 @@
-![autonome-banner](https://github.com/user-attachments/assets/f0deb792-b24f-48a2-bdf3-e03bb6738e6b)
+![autonome-banner](https://github.com/user-attachments/assets/6ac76ef7-41f9-4d13-ae30-4b5fb1021a06)
 
 **Autonome** is an intent-driven workflow for AI coding agents.
 Turn ideas into **approved designs**, **executable plans**, and **verified code** through enforced **agentic workflows**.
