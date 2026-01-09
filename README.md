@@ -159,7 +159,7 @@ Activates when all tasks are complete. The agent runs the full test suite, prese
 - **use-worktrees** - Parallel development branches
 
 **Meta**
-- **skill-create** - Create new skills following best practices (includes testing methodology)
+- **use-skill-create** - Create new skills following best practices (includes testing methodology)
 - **use-autonome** - Introduction to the skills system
 
 ## Updating
