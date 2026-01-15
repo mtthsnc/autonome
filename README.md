@@ -134,6 +134,9 @@ Autonome includes skills that activate automatically based on what you are doing
 - `use-debug` - 4-phase root cause process
 - `use-verify` - Ensure it's actually fixed
 
+**Architecture**
+- `use-architect` - Validate architecture before implementation
+
 **Collaboration**
 - `use-brainstorm` - Socratic design refinement
 - `use-plan-create` - Detailed implementation plans
@@ -156,21 +159,24 @@ Skills activate automatically. The agent detects which phase you are in and load
 ### 1. Intent Extraction
 Before any code is written, the agent extracts your intent through structured questions. It explores alternatives with clear trade-offs before recommending an approach. The resulting design is presented in digestible sections for your approval.
 
-### 2. Isolated Workspace
-After design approval, the agent creates a dedicated git worktree on a new branch. This provides a fully isolated development environment where multiple features can be built simultaneously without interference.
+### 2. Architecture Review
+After design approval, the agent validates architectural decisions before implementation. It reviews component boundaries, data flow, dependencies, and change vectors. For significant decisions, it creates Architecture Decision Records (ADRs). This catches structural issues at $10 cost instead of $1000 later.
 
-### 3. Implementation Planning
+### 3. Isolated Workspace
+After architecture review, the agent creates a dedicated git worktree on a new branch. This provides a fully isolated development environment where multiple features can be built simultaneously without interference.
+
+### 4. Implementation Planning
 The agent compresses the specification into small executable tasks (2-5 minutes each). Tasks include exact file paths, complete code snippets, and verification commands with expected output. Everything follows strict TDD discipline.
 
-### 4. Execution
+### 5. Execution
 Two execution modes are available:
 - **use-subagents-dispatch** runs in the same session with fresh subagents for each task and automatic two-stage reviews
 - **use-plan-execute** runs tasks in batches with human checkpoints between batches
 
-### 5. Quality Gates
+### 6. Quality Gates
 Reviews run between tasks. The first review checks spec compliance to confirm the correct problem was solved. The second review checks code quality. Issues trigger fix-and-review loops until both gates pass.
 
-### 6. Completion & Cleanup
+### 7. Completion & Cleanup
 When all tasks are complete, the agent runs the full test suite, presents integration options, and cleans up the worktree.
 
 ## Updating

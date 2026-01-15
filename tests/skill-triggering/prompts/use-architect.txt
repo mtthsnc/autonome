@@ -1,0 +1,8 @@
+I have a completed design document from brainstorming. Before I proceed with implementation, I want to validate the architecture.
+
+I'm concerned about:
+- Component boundaries and responsibilities
+- Data flow and dependencies
+- Whether the design supports future changes
+
+Should I do an architectural review at this point?

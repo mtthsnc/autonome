@@ -1,0 +1,10 @@
+I'm building a complex data dashboard with multiple charts and filters. I need to think about:
+
+- Component architecture and hierarchy
+- State management strategy (Redux vs Context vs local state)
+- Data fetching and caching
+- Performance considerations
+
+I've built dashboards before and usually use a standard pattern, but I want to make sure I'm considering the right things for this specific project.
+
+What should I think about architecturally?
