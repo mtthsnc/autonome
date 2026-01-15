@@ -15,6 +15,7 @@ SKILLS=(
     "use-plan-execute"
     "use-review-request"
     "use-tdd"
+    "use-architect"
 )
 
 echo "=== Running Skill Triggering Tests ==="
